@@ -3,10 +3,46 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+
+body{
+  font-family: open sans,arial,sans-serif;
+  margin:0;
+}
 .main {
   width: 100%;
   overflow: hidden;
+  font-size: 1.25em;
 }
+
+.logo{
+	float:left;
+	display:block;
+	padding-top:22px;
+    padding-bottom:22px;
+	text-align:center;
+  }
+  
+  .widget{
+	border:0px;
+	height:500px;
+	width:80%;
+	box-shadow: 0 0 16px 3px rgba(0,0,0,.2);
+	margin:auto;
+	display:block;
+	margin-top:40px;
+	margin-bottom:60px;
+  }
+  .header{
+	min-width:50%;
+	width:auto;
+	text-align:center;
+	display: table;
+	margin: 0 auto;
+  }
+  
+  .header h1, .header h3{
+	display:inline-block; 
+  }
 
 @media only screen and (max-width:800px) {
   /* For tablets: */
@@ -14,34 +50,51 @@
   float:center;
     width:100%;
   }
+  .logo{
+	float:unset;
+	margin:auto;
+  }
+  .widget{
+	width:95%;
+  }
 }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
   .main {
     width: 100%;
   }
+  .logo{
+		float:unset; 
+  }
+  .widget{
+	width:95%;
+  }
 }
 </style>
 </head>
-<body style="font-family:Verdana; margin:0;">
+<body>
 
 <div style="background-color:#32393c;padding:15px;text-align:center; color:#ffffff">
-  <h1><span style="color:#e6282a">Vendo</span> <span style="color:#ffffff">Compro</span> <span style="color:#4398c2">Scambio</span></h1>
+   <div class="header">
+   <div class="logo"><img src="logo.jpg" width="100px"></div>
+  <h1><span style="color:#e6282a">Vendo</span> <span style="color:#ffffff">Compro</span> <span style="color:#4398c2">Scambio</span></h1><br>
   <h3>Telegram: <a href="https://t.me/joinchat/AAAAAFDj4TqdvueBgGcpRw" style="color:#fdc00f">@VendoComproScambio</a></h3>
+  </div>
 </div>
 
 <div style="overflow:auto; margin:15px;">
   <div class="main">
   <div style="margin-top:30px;   line-height: 25px;">
-    <img src="logo.jpg" style="max-height:200px;max-width:40%; float:left; padding-right:10px; padding-bottom:10px"><div style="width:100%"><a href="https://t.me/joinchat/AAAAAFDj4TqdvueBgGcpRw" style="color:#000000;    vertical-align: middle;
-">Vendo Compro Scambio</a> è il primo canale dedicato alla vendita, allo scambio e alla ricerca di prodotti tra privati. È possibile inserire il tuo annuncio gazie al nostro bot dedicato: <a href="https://t.me/VendoComproScambio_bot" style="color:#e6282a;
+    <div style="width:100%; text-align:center; font-weight: bold;"><a href="https://t.me/joinchat/AAAAAFDj4TqdvueBgGcpRw" style="color:#000000;    vertical-align: middle;
+">Vendo Compro Scambio</a> è il primo canale dedicato alla vendita, allo scambio e alla ricerca di prodotti tra privati. <br>È possibile inserire un annuncio o contattare lo Staff gazie al nostro bot dedicato: <a href="https://t.me/VendoComproScambio_bot" style="color:#e6282a;
 ">@VendoComproScambio_bot</a>.</div>
 	  
-	  <iframe id="preview" style="border:0px;height:500px;width:500px;margin:5px;box-shadow: 0 0 16px 3px rgba(0,0,0,.2);" src="https://xn--r1a.website/s/vendoComproScambio"></iframe>
+	  <iframe class="widget" id="preview" src="https://xn--r1a.website/s/vendoComproScambio"></iframe>
 	  
         <h2 style="text-align:center;margin-bottom:30px; clear:both">Termini e condizioni di utilizzo</h2>
 	<p style="clear: both;">Ogni utente avviando il nostro bot <a href="https://t.me/VendoComproScambio_bot" style="color:#e6282a;
-">@VendoComproScambio_bot</a> e accettando i presenti Termini di servizio sarà in grado di inserire massimo 3 annunci ogni giorno sul nostro canale Telegram.<br><h3 style="text-align:center">Regole</h3><span>Ogni utente è tenuto a: non iserire annunci multipli per lo stesso prodotto; inserire contatti veritieri per permettere ad eventuali acquirenti di acquistare il prodotto; inserire immagini reali del prodotto in vendita.</span><span><p>Sul canale @VendoComproScambio non &egrave; possibile pubblicare:</p>
+">@VendoComproScambio_bot</a> e accettando i presenti Termini di servizio sarà in grado di inserire massimo 3 annunci ogni giorno sul nostro canale Telegram.<br><h3 style="text-align:center">Regole</h3><span>Ogni utente è tenuto a: non iserire annunci multipli per lo stesso prodotto; inserire contatti veritieri per permettere ad eventuali acquirenti di acquistare il prodotto; inserire immagini reali del prodotto in vendita.</span><span><p>Sul canale <a href="https://t.me/joinchat/AAAAAFDj4TqdvueBgGcpRw" style="color:#e6282a;
+">@VendoComproScambio</a> non &egrave; possibile pubblicare:</p>
 
 <ul>
 	<li>annunci da parte di aziende;</li>
@@ -49,8 +102,9 @@
 	<li>annunci lavorativi di qualsiasi genere;</li>
 	<li>annunci riguardanti qualunque genere di servizio;</li>
 	<li>annunci riconducibili ad attività di dropshopping o a prodotti non in possesso del venditore;</li>
+	<li>annunci di prodotti identici in grandi quantit&agrave;</li> 
 	<li>annunci contententi prodotti farmaceutici, Cannabis Light, Bong e Grinder;</li>
-	<li>annunci contenenti mascherine/bandane di qualsiasi tipologia (fino a fine emergenza COVID-19)</li>
+	<li>annunci contenenti mascherine/bandane di qualsiasi tipologia (fino a fine emergenza COVID-19);</li>
 	<li>inserire annunci che non mettano in vendita un prodotto ma che abbiano come unico scopo quello di dare visibilit&agrave; a un marchio, a un&#39;azienda, a un altro sito web;</li>
 	<li>inserire annunci con termini razzisti e/o discriminatori e/o con contenuti offensivi;</li>
 	<li>prodotti digitali;</li>
@@ -66,16 +120,16 @@
 	<li>vendere beni o servizi vietati dalla legislazione italiana.</li>
 	<li>annunci che violano in qualunque modo la legislazione italiana.</li>
 </ul></span>
-	  <span>Gli annunci sul canale devono avere una permanenza minima di 7 giorni lavorativi prima di poter essere reinseriti.</span>
+	  <span>Ogni annuncio deve contenere foto reali del prodotto, non sono quindi ammesse foto simboliche o rielaborate.<br>Gli annunci sul canale devono avere una permanenza minima di 7 giorni lavorativi prima di poter essere pubblicati nuovamente, dopo una richiesta di eliminazione non sarà possibile inserire nuovamente l'annuncio prima di tale intervallo temporale.<br>Dopo la pubblicazione sarà possibile modificare la descrizione dell'annuncio (sono esclusi titolo e foto) o richiederne l'eliminazione tramite il Bot <a href="https://t.me/VendoComproScambio_bot" style="color:#e6282a;">@VendoComproScambio_bot</a>.</span><br><br>
 	  
-	  <span>Gli utenti che violano le regole sopra citate, verranno bannati dagli amministratori e non potranno più inserire annunci sul canale. Lo Staff si riserva inoltre il diritto di eliminare qualsiasi annuncio che ritiene non essere conforme alla pubblicazione e di bloccare gli utenti con una condotta scorretta.</span><h3 style="text-align:center">Privacy</h3>Utilizzando il bot <a href="https://t.me/VendoComproScambio_bot" style="color:#e6282a;
-">@VendoComproScambio_bot</a> ogni utente concede agli amministratori del canale <a href="https://t.me/joinchat/AAAAAFDj4TqdvueBgGcpRw" style="color:#e6282a;">@VendoComproScambio</a> la facoltà di memorizzare dettagli sul proprio account Telegram al fine di offrire il servizio sopra citato. I dati memorizzati non verranno divulgati ma utilizzati esclusivamente per la gestione dell'attività di ogni utente all'interno del canale e del bot. Pubblicando un annuncio ogni utente accetta inoltre di rendere potenzialmente di pubblico dominio i contatti inseriti all'interno dello stesso. In qualsiasi momento è possibile richiedere l'eliminazione totale dei propri annunci e dei propri dati (ad esclusione del proprio id Telegram nel caso in cui siano stati violati i presenti termini) attraverso la sezione contatti del bot.</p><br>
-	  <p>Il servizio offerto da <a href="https://t.me/joinchat/AAAAAFDj4TqdvueBgGcpRw" style="color:#000000;">Vendo Compro Scambio</a> è esclusivamente un servizio di indicizzazione di annunci che permette di mettere in contatto venditore ed acquirente. Gli amministratori si impegnano al fine di evitare palesi truffe e violazioni effettuate dagli utenti, ma non è possibile assicurarne la totale assenza tra gli annunci. Gli amministratori non si assumono inoltre nessuna responsabilità riguardo la condotta degli utenti del canale, ma si impegnano al fine di evitare comportamenti scorretti.
+	  <span>Gli utenti che violano il contenuto riportato nella presente pagina, verranno bloccati dal nostro Staff e non potranno più inserire annunci sul canale. Lo Staff si riserva inoltre il diritto di eliminare qualsiasi annuncio che ritiene non essere conforme alla pubblicazione e di bloccare gli utenti con una condotta ritenuta scorretta.<br>Tutte le comunicazioni inviate tramite la sezione "Contatti" del nostro Bot riguardanti spiegazioni in merito al blocco del proprio account non verranno prese in considerazione in quanto le risposte sono presenti nella presente pagina.</span><h3 style="text-align:center">Privacy</h3>Utilizzando il bot <a href="https://t.me/VendoComproScambio_bot" style="color:#e6282a;
+">@VendoComproScambio_bot</a> ogni utente concede agli amministratori del canale <a href="https://t.me/joinchat/AAAAAFDj4TqdvueBgGcpRw" style="color:#e6282a;">@VendoComproScambio</a> la facoltà di memorizzare dettagli sul proprio account Telegram (Nome, Cognome, Username, ID) al fine di offrire il servizio sopra citato. <br>I dati memorizzati non verranno divulgati ma utilizzati esclusivamente per la gestione dell'attività di ogni utente all'interno del Canale e del Bot, fatta eccezione del caso in cui si accerti una truffa da parte dell'utente. In tal caso i dati dell'account Telegram, a seguito di opportune verifiche, potrebbero essere forniti agli utenti danneggiati per permetterne la denuncia alle autorità o per facilitare il contatto con l'utente operante la truffa.<br>Pubblicando un annuncio ogni utente accetta inoltre di rendere di pubblico dominio i dati inseriti all'interno dello stesso e di accettarne la memorizzazione da parte di VendoComproScambio.<br> In qualsiasi momento è possibile richiedere l'eliminazione totale dei propri annunci e dei propri dati attraverso la sezione contatti del bot. Nel caso in cui si ritenga che l'utente abbia violato i presenti termini e/o operato truffe ai danni di altri utenti, i dati relativi al proprio account Telegram possono essere mantenuti fino a 2 anni dalla data di richiesta eliminazione o in modo permanente nel caso esclusivo dell'ID relativo all'account.</p><br>
+	  <p>Il servizio offerto da <a href="https://t.me/joinchat/AAAAAFDj4TqdvueBgGcpRw" style="color:#000000;">Vendo Compro Scambio</a> è esclusivamente un servizio di indicizzazione di annunci che permette di mettere in contatto venditore ed acquirente.</p>Lo Staff si impegna al fine di evitare truffe e/o violazioni effettuate dagli utenti (senza assicurarne la totale riuscita), non si assume infatti nessuna responsabilità riguardo la condotta degli utenti nelle compravendite effettuate grazie alla visibilità offerta da questo canale.
 </div>
   </div>
 	</div>
 <footer>
-  <div style="margin-top:30px;padding:10px; background-color:#32393c; color:#ffffff;text-align:center;font-size:12px;">© Copyright 2019 <a href="https://t.me/joinchat/AAAAAFDj4TqdvueBgGcpRw" style="color:#fdc00f">VendoComproScambio</a> | Tutti i diritti riservati.</div>
+  <div style="margin-top:30px;padding:10px; background-color:#32393c; color:#ffffff;text-align:center;font-size:12px;">© Copyright 2020 <a href="https://t.me/joinchat/AAAAAFDj4TqdvueBgGcpRw" style="color:#fdc00f">VendoComproScambio</a> | Tutti i diritti riservati.</div>
 </footer>
 </body>
 </html>
