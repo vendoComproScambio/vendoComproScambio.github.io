@@ -1,0 +1,307 @@
+body{
+  font-family: open sans,arial,sans-serif;
+  margin:0;
+}
+
+.main {
+  width: 100%;
+  overflow: hidden;
+  font-size: 1.25em;
+}
+
+.logo{
+	display:block;
+	text-align:center;
+  }
+
+.logo img{
+	height:70px;
+}
+
+.back_home{
+	display:none;
+}
+  
+.loader {
+    background:url(img/loader.gif) top center no-repeat; 
+	background-position: center 40px;
+	height:180px;
+	background-color:#232c55;
+	text-align:center;
+	border-bottom-left-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+	border: 2px, solid;
+	color:white;
+	font-weight: bold;
+	font-size:1.25rem;
+}
+
+.loader p{
+	display:inline-block;
+	margin-top: 120px;
+}
+  
+.widget{
+	border:0px;
+	height:1000px;
+	width:45%;
+	margin:auto;
+	display:block;
+	overflow:scroll;
+  }
+  
+.widget_container{
+	margin:auto;
+	display:block;
+	width:99%;
+	border: 2px solid #e5ebef;
+	background-image: linear-gradient(180deg, #ffffff 0.24%, #e5ebef 0.24%, #e5ebef 50%, #ffffff 50%, #ffffff 50.24%, #e5ebef 50.24%, #e5ebef 100%);
+	background-size: 20096.00px 20096.00px;
+	border-radius: 1rem;
+  }
+  
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .main {
+  padding-top: 102px;
+}
+
+  .header{
+	min-width:50%;
+	width:auto;
+	text-align:center;
+	display: table;
+	margin: 0 auto;
+  }
+  
+  .header h1, .header h3{
+	display:inline-block; 
+  }
+  
+  #notice, #buy{
+	padding:20px;
+}
+
+.telegramTable{
+	margin-top:50px;
+	margin-bottom:50px;
+	margin-left:auto;
+	margin-right:auto;
+	display: table;
+	width: 60%;
+}
+.telegramTableRow {
+	display: table-row;
+}
+
+.telegramTableCell > a{
+	color:white;
+	text-decoration:none;
+}
+
+.telegramTable img {
+    height: auto;
+    max-width: 100%;
+    max-height: 100px;
+    text-align: center;
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+}
+
+.telegramTableCell{
+	width:20%;
+}
+.telegramTableCell, .telegramTableHead {
+	display: table-cell;
+}
+
+.card_buy {
+	border-radius: 1rem;
+	background-color: #6C1E7F;
+	padding: 15px;
+	cursor: pointer;
+	text-align:center;
+	min-height:180px;
+	max-width:250px;
+	margin:auto;
+}
+
+.card_home {
+	cursor: pointer;
+	position:fixed;
+	left:20px;
+	top: 15px;
+	display:block;
+	border-radius: 0.5rem;
+	background-color: #ff4337;
+	padding: 15px;
+	cursor: pointer;
+	text-align:center;
+	max-height:30px;
+	max-width:30px;
+}
+
+.card_home span{
+	font-size: 0.7rem;
+}
+
+
+.card_home img{
+	height:20px;
+}
+
+.card_home:hover {
+  transform: scale(1.1);
+}
+
+.card_buy:hover {
+  transform: scale(1.1);
+}
+
+.card_shop {
+	border-radius: 1rem;
+	background-color: #ffa52e;
+	padding: 15px;
+	cursor: pointer;
+	text-align:center;
+	min-height:180px;
+	max-width:250px;
+	margin:auto;
+}
+
+.card_shop:hover {
+  transform: scale(1.1);
+}
+
+.footer{
+	margin-top:30px;
+	padding:10px; 
+	background-color:#232c55; 
+	color:#ffffff;
+	text-align:center;font-size:12px;
+	position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.scroll{
+	position:fixed;
+	top:45%;
+	right: 5%;
+	display:block;
+	max-width:20%;
+	text-align:center;
+	font-weight:600;
+}
+
+.scroll img{
+	height:60px;
+	margin:auto;
+}
+
+.telegram{
+	position:fixed;
+	top:45%;
+	left: 5%;
+	display:block;
+	max-width:15%;
+	text-align:center;
+	font-weight:600;
+	cursor:pointer;
+}
+
+.telegram img{
+	height:60px;
+	margin:auto;
+}
+.telegram:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width:800px) {
+	
+.scroll{
+	display:none;
+}
+	
+.body{
+	background-color:#232c55;
+}
+
+.back_home{
+	display:block;
+}
+
+
+.back_home {
+	cursor: pointer;
+	display:block;
+	border-radius: 1rem;
+	background-color: #ff4337;
+	padding: 5px;
+	cursor: pointer;
+	text-align:center;
+	max-height:20px;
+	max-width:150px;
+	margin:auto;
+	margin-top:10px!important;
+}
+
+.back_home span{
+	font-size: 0.7rem;
+}
+
+	
+.telegramTable img{
+	padding: 2px;
+}
+.telegramTableCell{
+	width:20%;
+}
+
+.card_fash{
+	min-height:260px;
+}
+  /* For tablets: */
+  .main {
+  float:center;
+    width:100%;
+  }
+  .logo{
+	float:unset;
+	margin:auto;
+  }
+  
+  .logo img{
+	height:50px;
+
+  }
+
+  .widget{
+	width:95%;
+  }
+  
+.telegramTable{
+	width: 95%;
+	padding-bottom:30px;
+}
+
+.card_buy, .card_shop {
+	min-height:220px;
+	min-width:100px;
+	font-size:1.0em;
+}
+
+.card_home {display:none;
+}
+.telegram{
+	display:none;
+}
+}

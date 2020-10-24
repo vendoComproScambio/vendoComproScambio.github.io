@@ -1,0 +1,63 @@
+<html lang="it">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>vendoComproScambio - Annunci</title>
+	<link rel="stylesheet" media="screen" href="style.css">
+</head>
+<body style="flex-direction: row-reverse;" class="body">
+
+<div  id="header" style="background-color:#232c55; text-align:center; color:#ffffff">
+   <div class="header">
+   <div class="logo" style="padding:10px;">
+   <a href="https://vendoComproScambio.github.io" style="color:#ffffff; font-weight: bold; text-decoration: none;">
+   <div class="card_home">
+		<img src="img/home.png" alt="" rel="nofollow noopener"> 
+		<span>HOME</span>
+		</div></a>
+		<a href="https://vendoComproScambio.github.io">
+		<img src="img/logo.png"></a>
+		   <a href="https://vendoComproScambio.github.io" style="color:#ffffff; font-weight: bold; text-decoration: none;">
+		   <div class="back_home">
+	<span>← TORNA ALLA HOME</span>
+	</div></a>
+</div>
+
+  </div>
+</div>
+<div class="loader "id="loader"><p>Sto caricando le offerte...</p></div>
+<div style="overflow:auto;">
+  <div class="main">
+  <div>
+  <div class="widget_container">
+    <div class="widget_container" id="widget_load"><div class="scroll"><img src="img/scroll.gif">Posiziona il mouse al centro della pagina e scorri verso l'alto!</div>
+  <iframe onload="document.getElementById('loader').style.display='none';" class="widget" id="preview" src="https://prezzamico.it/wptelegram/widget/view/@shop_vendoComproScambio"></iframe>
+  </div>
+    <a style="color:#000000; text-decoration: none;" href="https://t.me/joinchat/AAAAAFDj4To8SF00sMx0sw"><div class="telegram"><img src="img/telegram.webp"><p>Unisciti al canale Telegram</p></div></a>
+  
+</div>
+  </div>
+	</div>
+<footer>
+  <div class="footer">© Copyright 2020 <a href="https://t.me/joinchat/AAAAAFDj4To8SF00sMx0sw" style="color:#ff4337">VendoComproScambio</a> | Tutti i diritti riservati.</div>
+</footer>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("header");
+var popup = document.getElementById("loader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+	loader.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+
+</body>
+</html>
